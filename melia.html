@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asset-Light Hospitality: The Meliá International Hotels Thesis — Lee Kelsall</title>
+  <meta name="description" content="Meliá owns some of the best resort real estate in the world — and is quietly giving it away. The asset-light pivot is either the smartest capital allocation in European hospitality, or a bet the market hasn't priced correctly yet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #111111; --grey: #666666; --light-grey: #999999; --rule: #e8e8e4; --bg: #fafaf8; --max: 640px; }
+    html { font-size: 18px; }
+    body { background: var(--bg); color: var(--black); font-family: 'EB Garamond', Georgia, serif; line-height: 1.75; padding: 64px 32px 120px; max-width: var(--max); margin: 0 auto; }
+    nav { display: flex; align-items: baseline; gap: 24px; margin-bottom: 56px; }
+    nav a { font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 300; color: var(--grey); text-decoration: none; letter-spacing: 0.05em; text-transform: lowercase; transition: color 0.15s ease; }
+    nav a.name { font-family: 'EB Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.01em; margin-right: auto; text-transform: none; color: var(--black); }
+    nav a:hover { color: var(--black); }
+    header { padding: 3rem 0 1.5rem; border-top: 1px solid var(--rule); }
+    .label { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-grey); margin-bottom: 1.25rem; }
+    h1 { font-size: 2rem; font-weight: 400; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 1rem; }
+    .subtitle { font-size: 1.05rem; color: var(--grey); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
+    .meta { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
+    .tldr { border-left: 2px solid #e0e0dc; margin: 0 0 2.5rem; padding: 1rem 1.25rem; background: rgba(0,0,0,0.015); }
+    .tldr p { font-size: 0.92rem; color: var(--grey); font-style: italic; margin-bottom: 0; line-height: 1.65; }
+    .tldr strong { font-style: normal; color: var(--black); }
+    article { padding: 1.5rem 0 5rem; }
+    p { margin-bottom: 1.4rem; font-size: 1rem; }
+    p:last-child { margin-bottom: 0; }
+    h2 { font-family: 'DM Mono', monospace; font-size: 0.68rem; font-weight: 400; color: var(--light-grey); letter-spacing: 0.1em; text-transform: uppercase; margin: 3.5rem 0 1.5rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+    h3 { font-size: 1.2rem; font-weight: 500; font-style: italic; margin: 2.5rem 0 1rem; }
+    em { font-style: italic; }
+    strong { font-weight: 500; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+    ul, ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
+    ul li, ol li { margin-bottom: 0.5rem; font-size: 1rem; }
+    .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--rule); margin: 2rem 0; border: 1px solid var(--rule); }
+    .metric { background: var(--bg); padding: 1.25rem; }
+    .metric .number { font-size: 1.4rem; font-weight: 400; line-height: 1; margin-bottom: 0.35rem; }
+    .metric .desc { font-family: 'DM Mono', monospace; font-size: 0.6rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0; }
+    .verdict { background: rgba(0,0,0,0.025); border: 1px solid var(--rule); padding: 1.5rem; margin: 2.5rem 0; }
+    .verdict p { margin-bottom: 0; font-size: 0.95rem; font-style: italic; color: var(--grey); }
+    .disclaimer { font-size: 0.82rem; color: var(--light-grey); font-style: italic; border-top: 1px solid var(--rule); padding-top: 1.5rem; margin-top: 3rem; line-height: 1.6; }
+    .footer-nav { padding: 2rem 0 3rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
+    .footer-nav a { color: var(--black); text-decoration: none; }
+    .footer-nav a:hover { text-decoration: underline; }
+    @media (max-width: 480px) { body { padding: 40px 20px 80px; } h1 { font-size: 1.6rem; } .metrics { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="name">Lee Kelsall</a>
+    <a href="/#writing">writing</a>
+    <a href="/#now">now</a>
+    <a href="mailto:lee@komorebiholdings.com">contact</a>
+  </nav>
+
+  <header>
+    <p class="label">Research</p>
+    <h1>Asset-Light Hospitality: The Meliá International Hotels Thesis</h1>
+    <p class="subtitle">Meliá owns some of the best resort real estate in the world — and is quietly giving it away. The asset-light pivot is either the smartest capital allocation in European hospitality, or a bet the market hasn't priced correctly yet.</p>
+    <p class="meta">2025 &nbsp;·&nbsp; 5 min read</p>
+  </header>
+
+  <article>
+
+    <div class="tldr">
+      <p><strong>TL;DR —</strong> This thesis on Meliá Hotels International (BME:MEL) examines how Spain's largest hotel group is rebuilding balance sheet strength while transitioning from a capital-heavy owner-operator to an asset-light, globally franchised platform. The analysis explores Meliá's portfolio realignment, debt reduction, and brand segmentation strategy, as well as its long-term valuation potential as a European hospitality spawner leveraging scale, loyalty, and sustainability to compound earnings across cycles.</p>
+    </div>
+
+    <h2>A Business Model in Evolution</h2>
+
+    <p>I first came across <strong>Meliá Hotels International (BME: MEL)</strong> — Spain's largest hotel group and the world's 17th by room count — after a property developer friend returned from one of their resorts with uncharacteristic enthusiasm. What struck him wasn't just the hotel itself but the <em>system</em>: a seamless digital check-out, an intuitive online interface, and a sense of operational polish that suggested a brand quietly punching above its weight.</p>
+
+    <p>That remark piqued my interest. As part of my ongoing research into mid-cap hospitality groups with <em>spawner potential</em> — companies capable of evolving from operators into multi-brand, asset-light ecosystems — I found a business in the midst of quiet transformation. Meliá is moving from asset-heavy hotel ownership toward a management and franchise model that, if successful, could meaningfully reshape its economics over the next decade.</p>
+
+    <p>Like most transitions, it's slow, messy, and layered with accounting fog. But underneath, there's a company deliberately rewiring its foundations around brand, technology, and capital efficiency.</p>
+
+    <h2>The Quiet Strength of Brand and Culture</h2>
+
+    <p>One of the first data points that stood out was Meliá's <strong>Net Promoter Score of 59</strong> — among the highest in global hospitality and improving year on year. The company was also recognised as <strong>Europe's most sustainable hotel group in 2024</strong>, and made headlines for purchasing housing for staff in high-rent cities. In a sector known for labour churn, that level of care is unusual — and telling.</p>
+
+    <p>Still majority-owned by the Escarrer family, Meliá retains the cultural steadiness and long-term orientation of founder-led stewardship. The group's <strong>loyalty programme counts 160 members per room</strong> — a remarkable ratio that surpasses Hyatt, IHG, and even Marriott on a relative basis.</p>
+
+    <p>Founded in 1956 and headquartered in Palma de Mallorca, Meliá operates <strong>362 hotels across 41 countries</strong>, totalling around 94,000 rooms. Under Gabriel Escarrer Jr., the company is methodically reducing ownership exposure and expanding its management base — aiming to own less, manage more, and extract more value from systems, brand, and scale.</p>
+
+    <h2>Cultural Capital: Beyond the Hotel Walls</h2>
+
+    <p>Meliá has built a distinctive form of cultural capital through <strong>strategic partnerships with Rafael Nadal and Lionel Messi</strong>. Its collaboration with Nadal — a fellow Mallorcan and symbol of discipline, humility, and endurance — reinforces the company's Spanish heritage and quiet excellence. The MIM Hotels partnership with Messi extends Meliá's reach into Latin America and the Mediterranean, blending sportsmanship with sustainability and community-led tourism.</p>
+
+    <p>These aren't superficial endorsements. They are brand multipliers — extensions of Meliá's identity across geographies and generations that elevate it from a hotel operator to a cultural brand with genuine narrative power.</p>
+
+    <h2>Valuation: Deep Value Meets Strategic Ambiguity</h2>
+
+    <p>On paper, Meliá looks like deep value. In 2024, the company generated €2.02 billion in revenue and €333 million in EBIT, yet trades at just 7.7x EV/EBITDA — implying a 20–23% free cash flow yield.</p>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="number">€2.02bn</div>
+        <div class="desc">Revenue 2024</div>
+      </div>
+      <div class="metric">
+        <div class="number">7.7x</div>
+        <div class="desc">EV/EBITDA</div>
+      </div>
+      <div class="metric">
+        <div class="number">362</div>
+        <div class="desc">Hotels across 41 countries</div>
+      </div>
+      <div class="metric">
+        <div class="number">59</div>
+        <div class="desc">Net Promoter Score</div>
+      </div>
+    </div>
+
+    <p>But when you unpack those earnings, things get murkier. Meliá reports €411 million in "management and franchise" revenue, which at first glance implies progress toward asset-light economics. A closer look reveals that €94.6 million comes from internal management fees (charged to its own hotels), and €242.8 million falls under "Other Revenues." Once adjusted, only <strong>€73.6 million</strong> is genuine third-party management income. Assuming industry-standard margins, that equates to roughly <strong>€24 million in EBIT</strong> — around 7% of group EBIT.</p>
+
+    <p>For comparison, Marriott and Hilton earn €2,000–€3,000 EBIT per managed room. Meliá earns about €380. Is this internal allocations masking real performance, underpricing relative to brand strength, or simply the drag of lower-ADR markets like Cuba and the Caribbean? Likely all three.</p>
+
+    <h2>Asset Backing: Real, But Complicated</h2>
+
+    <p>Much of Meliá's perceived margin of safety stems from its real estate. The company reports a NAV of €5.3 billion, but that includes leased assets capitalised under IFRS 16 — which aren't monetisable. Stripping those out, monetisable assets amount to roughly <strong>€2.56 billion</strong>. After net debt of €773 million, tangible equity stands at around €1.78 billion. With a market cap of €1.6 billion, investors are paying roughly book value for the tangible equity — and getting the brand, management platform, and loyalty ecosystem for free.</p>
+
+    <p>That looks attractive, but only if two conditions hold: the platform's share of EBIT meaningfully expands, and the underlying assets remain liquid and defensible through the cycle. Both are plausible. Neither is guaranteed.</p>
+
+    <h2>The Transition: Real, But Slow</h2>
+
+    <p>The direction of travel is clear. The pipeline includes 69 hotels, almost all under management or franchise contracts. If executed well, this could double third-party EBIT over five to seven years. But the base is small — roughly €24 million today — and many new signings are in low-fee, emerging markets. Only 28% of leases come up for renewal within five years, meaning progress will be steady rather than spectacular.</p>
+
+    <p>This isn't Hilton's reinvention. It's a slow, continental pivot, shaped by cautious capital allocation, regulatory drag, and deeply ingrained family conservatism. But as any long-term investor knows, direction often matters more than velocity.</p>
+
+    <h2>Governance: The Double-Edged Sword of Family Control</h2>
+
+    <p>Family ownership brings stability, brand consistency, and genuine alignment with long-term value. But it also dampens urgency. There's no activist catalyst, no private equity oversight, and limited incentive to maximise short-term metrics. Transparency remains limited, especially around segment-level profitability — which explains the persistent "conglomerate discount."</p>
+
+    <p>Yet the same conservatism that frustrates analysts has also protected Meliá through every major downturn — from the Eurozone crisis to COVID-19. The balance sheet is intact, the brand undiluted, and the culture recognisably human.</p>
+
+    <h2>Bull Case and Bear Case</h2>
+
+    <h3>The Bull Case: Optionality in Patience</h3>
+
+    <p>If Meliá can lift third-party EBIT to €50–60 million, continue asset monetisations (like its €300 million JV with Santander and $63 million sale of Punta Cana hotels), and convince investors that its platform economics are credible, then a re-rating to 10x EBITDA would imply <strong>30–50% upside</strong>. That's not hypergrowth — but it's meaningful, with asset-backed downside protection and a long-duration franchise.</p>
+
+    <h3>The Bear Case: Structure Without Leverage</h3>
+
+    <p>The risk is that this transformation stalls in perpetual adolescence. Legacy leases may continue to cap returns. Inflation and wage pressure could erode margins. Emerging-market exposure dilutes pricing power. Without clear reporting or external pressure, the pace of change could remain frustratingly slow. In that world, Meliá remains a good company but not a great investment — a steady compounder trapped in structural conservatism.</p>
+
+    <h2>Final Reflection</h2>
+
+    <div class="verdict">
+      <p>For now, Meliá remains a tracking position — a company to watch as its long transition plays out, rather than one to own in size. The line between value and trap often depends on transparency, urgency, and adaptability. Meliá's next act will test whether a family-led legacy business can evolve into a true platform — one that compounds both culture and capital.</p>
+    </div>
+
+    <p>There's much to admire: a trusted global brand with high guest satisfaction, family stewardship anchored in purpose rather than quarterly metrics, a strong real-asset base, authentic cultural partnerships, and a clear strategic path toward asset-light economics.</p>
+
+    <p>But admiration is not conviction. I hope it succeeds. The industry could use more companies that combine heritage with evolution.</p>
+
+    <p class="disclaimer">The content on this site is for informational and discussion purposes only and does not constitute investment advice, an offer, or a solicitation to buy or sell any securities. The author may hold positions in the securities discussed. Always do your own research.</p>
+
+  </article>
+
+  <div class="footer-nav">
+    <a href="/#writing">← All writing</a>
+    <span>© 2026 Lee Kelsall</span>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Travel is the Ultimate Complex Adaptive System — Lee Kelsall</title>
+  <meta name="description" content="Complexity science, technological revolutions, and the coming battle for the high ground of travel's next era." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #111111; --grey: #666666; --light-grey: #999999; --rule: #e8e8e4; --bg: #fafaf8; --max: 640px; }
+    html { font-size: 18px; }
+    body { background: var(--bg); color: var(--black); font-family: 'EB Garamond', Georgia, serif; line-height: 1.75; padding: 64px 32px 120px; max-width: var(--max); margin: 0 auto; }
+
+    nav { display: flex; align-items: baseline; gap: 24px; margin-bottom: 56px; }
+    nav a { font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 300; color: var(--grey); text-decoration: none; letter-spacing: 0.05em; text-transform: lowercase; transition: color 0.15s ease; }
+    nav a.name { font-family: 'EB Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.01em; margin-right: auto; text-transform: none; color: var(--black); }
+    nav a:hover { color: var(--black); }
+
+    header { padding: 3rem 0 1.5rem; border-top: 1px solid var(--rule); }
+    .label { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-grey); margin-bottom: 1.25rem; }
+    h1 { font-size: 2rem; font-weight: 400; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 1rem; }
+    .subtitle { font-size: 1.05rem; color: var(--grey); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
+    .meta { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
+
+    article { padding: 1.5rem 0 5rem; }
+    p { margin-bottom: 1.4rem; font-size: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    h2 { font-family: 'DM Mono', monospace; font-size: 0.68rem; font-weight: 400; color: var(--light-grey); letter-spacing: 0.1em; text-transform: uppercase; margin: 3.5rem 0 1.5rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
+
+    /* Sub-section headings — italic serif */
+    h3 { font-size: 1.15rem; font-weight: 500; font-style: italic; margin: 2.5rem 0 0.9rem; color: var(--black); }
+
+    em { font-style: italic; }
+    strong { font-weight: 500; }
+
+    hr { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
+
+    ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
+    ol li { margin-bottom: 0.5rem; font-size: 1rem; }
+
+    /* TL;DR */
+    .tldr { border-left: 2px solid #e0e0dc; margin: 0 0 2rem; padding: 1rem 1.25rem; background: rgba(0,0,0,0.015); }
+    .tldr p { font-size: 0.92rem; color: var(--grey); font-style: italic; margin-bottom: 0; line-height: 1.65; }
+    .tldr strong { font-style: normal; color: var(--black); }
+
+    /* Synthesis pull-quote blocks */
+    .synthesis-item {
+      padding: 1.25rem 0 1.25rem 1.25rem;
+      border-left: 2px solid var(--rule);
+      margin-bottom: 1.5rem;
+    }
+    .synthesis-item p { margin-bottom: 0; font-size: 0.97rem; }
+    .synthesis-item strong { color: var(--black); }
+
+    /* Coda styling */
+    .coda {
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    .coda .coda-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--light-grey);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Revolution list */
+    .revolutions {
+      margin: 1.5rem 0;
+      padding: 0;
+      list-style: none;
+    }
+    .revolutions li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.95rem;
+    }
+    .revolutions li:first-child { border-top: 1px solid var(--rule); }
+    .revolutions li .num {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      font-weight: 300;
+      color: var(--light-grey);
+      padding-top: 0.35rem;
+      min-width: 1.2rem;
+    }
+
+    .footer-nav { padding: 2rem 0 3rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
+    .footer-nav a { color: var(--black); text-decoration: none; }
+    .footer-nav a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) { body { padding: 40px 20px 80px; } h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="name">Lee Kelsall</a>
+    <a href="/#writing">writing</a>
+    <a href="/#now">now</a>
+    <a href="mailto:lee@komorebiholdings.com">contact</a>
+  </nav>
+
+  <header>
+    <p class="label">Strategy</p>
+    <h1>Why Travel is the Ultimate Complex Adaptive System</h1>
+    <p class="subtitle">Complexity science, technological revolutions, and the coming battle for the high ground of travel's next era.</p>
+    <p class="meta">2025 &nbsp;·&nbsp; 20 min read</p>
+  </header>
+
+  <article>
+
+    <div class="tldr">
+      <p><strong>TL;DR —</strong> Travel is a $10.9 trillion market — close to ten percent of global GDP, employing one in ten people worldwide. But those numbers miss the point. They describe the size of something without explaining its nature. Travel isn't an industry with neat boundaries. It's something harder to define and more interesting to think about: a complex adaptive system, a living network of interdependent parts shaped by economics, technology, politics, and human behaviour, evolving continuously in ways no single actor can predict or control.</p>
+    </div>
+
+    <p>I define travel broadly: any asset, product, service, experience, or infrastructure that enables or supports people moving from one place to another — including the destinations that make the journey worthwhile. An Uber. A flight across oceans. A digital booking platform. The roads, ports, and runways that make movement possible. The hotel, safari reserve, or ryokan at the other end. The local market, the guided tour, the restaurant that completes the experience. Taken together, this network forms the circulatory system of the global economy: capital intensive, politically sensitive, indispensable, and perpetually on the edge of reinvention.</p>
+
+    <p>Most investors treat travel as a sector. I treat it as a system. The distinction matters enormously for how you think, what you look for, and where you place your conviction.</p>
+
+    <!-- PART ONE -->
+    <h2>Part One: What Travel Actually Is</h2>
+
+    <h3>The Oldest Network on Earth</h3>
+
+    <p>Travel has been with us since the first merchants crossed deserts for trade, pilgrims walked to holy sites, and tribes crossed continents seeking new opportunities. It is one of humanity's oldest and most enduring networks — and unlike industries with clear product boundaries, it resists neat categorisation. Its edges blur across continents, cultures, and centuries.</p>
+
+    <p>What makes it a complex adaptive system rather than an industry? Complex adaptive systems are made of many interacting agents whose collective behaviour cannot be predicted by studying the parts in isolation. They are <em>complex</em> because the interactions between agents are endless and unpredictable. They are <em>adaptive</em> because those agents respond to feedback, constantly changing their behaviour over time. And they are <em>nonlinear</em> — meaning tiny inputs sometimes cascade into massive, irreversible transformations.</p>
+
+    <p>The classic illustration is Yellowstone. When wolves were reintroduced in 1995, ecologists expected a modest impact on deer populations. What happened instead was a cascade: deer changed grazing patterns to avoid wolves, overgrazing stopped, riverbank vegetation recovered, beavers returned, rivers physically changed course. A few grey predators reshaping a landscape's hydrology. That's nonlinearity. That's feedback. That's what a complex adaptive system actually does.</p>
+
+    <p>Travel works exactly the same way — just with fewer wolves and more airport lounges. One volcanic eruption in Iceland and suddenly flights are grounded across Europe, hotel bookings collapse, rental cars run out across multiple countries, and Icelandic fish miss their sushi appointments in Tokyo. One platform shifts its commission structure and thousands of independent hotels face an existential repricing of their business model. One pandemic and the entire global network stops overnight.</p>
+
+    <p>The feedback loops are everywhere, running in both directions. A destination goes viral on Instagram, airline routes follow demand, hotel investors pile in, prices spike, locals are priced out, the authenticity that made it desirable dissolves, and travellers chase the next unspoiled location — which itself goes viral within months. By the time the brochures are printed, the network has already morphed. By the time the investment thesis is written, the opportunity has moved.</p>
+
+    <h3>Antifragile by Design</h3>
+
+    <p>The most important and counterintuitive thing to understand about travel is that it doesn't just survive disruption — it tends to emerge from disruption stronger. Nassim Taleb calls this antifragility: the property of systems that gain from disorder rather than merely tolerating it.</p>
+
+    <p>Japan's oldest hotel, Nishiyama Onsen Keiunkan, has been passed down through 53 generations since 705 AD. Hōshi Ryokan has operated continuously since 718. These aren't curiosities for travel writers. They are empirical proof that hospitality can survive wars, famines, plagues, political upheaval, the collapse of entire civilisations, and technological revolutions that would be unrecognisable to their founders. The same adaptive traits that carried these inns through 1,300 years — deep cultural roots, service models that renew with each generation, genuine embeddedness in community — are precisely the traits that allowed modern hospitality giants to navigate COVID and emerge stronger.</p>
+
+    <p>COVID was the system's most revealing stress test in modern history. Within weeks, the network collapsed in ways that seemed terminal. Airports went silent. Airlines parked fleets in desert storage facilities. Hotels shuttered. Tourism economies that employed millions flatlined. Yet instead of disappearing, the system adapted. Marriott leveraged its loyalty ecosystem to maintain customer relationships through the dead period and accelerated recovery when borders opened. Booking and Airbnb pivoted to flexible, local, and long-stay models, gaining structural market share as travel resumed in new patterns. Ker &amp; Downey Africa, where I spent nearly a decade in the operator's chair, doubled down on high-value, low-volume travel — building deeper client relationships, expanding the product footprint, and emerging from COVID with a stronger competitive position than when it started.</p>
+
+    <p>COVID didn't make travel uninvestable. It proved the opposite: the entire global travel economy could stop overnight, shed obsolete layers, evolve in real time, and come back structurally fitter. For long-term investors, that is not a weakness to manage around — it is the ultimate moat to look for within.</p>
+
+    <p>Biological systems work this way: forests regenerate after fires, coral reefs adapt after bleaching events, ecosystems evolve under predation pressure. Travel carries the same regenerative logic, with redundancy baked into every layer — multiple modes of transport, diverse market segments, operators across every price point and geography. The system's very complexity is its defence mechanism.</p>
+
+    <h3>Brian Arthur, Increasing Returns, and the Logic of Lock-In</h3>
+
+    <p>W. Brian Arthur's work on increasing returns at the Santa Fe Institute explains why, within this complex system, certain nodes achieve disproportionate, self-reinforcing dominance. His core insight: in knowledge-based industries, early advantage compounds. Once a platform achieves critical mass — through network effects, data feedback loops, and switching costs — it enters an orbit of increasing returns that becomes progressively harder to challenge.</p>
+
+    <p>In travel, you see this clearly. Booking.com's hotel distribution dominance isn't primarily a function of product quality. It's a function of the self-reinforcing flywheel: more hotels means more travellers, more traveller data means better personalisation, better personalisation drives higher conversion, higher conversion makes hotels more dependent on the platform, platform dependency funds marketing that attracts more travellers. The flywheel, once spinning, becomes its own moat. Airbnb's grip on alternative accommodation follows the same logic. Once the network reaches sufficient density on both sides — hosts and guests — the marginal cost of maintaining dominance falls close to zero while the cost of challenging it from outside approaches infinity.</p>
+
+    <p>Geoffrey West adds another dimension: the relationship between size, efficiency, and survival. Large organisms and large organisations share a structural characteristic — they achieve efficiencies of scale in some inputs while experiencing superlinear scaling in others (innovation velocity, talent density, network effects). But size also scales negative properties — bureaucracy, inertia, political complexity. West's key insight for investors: growth buys time, but only innovation buys survival. Without stacking new S-curves, entropy wins. The giants that stall are always the ones that stopped recombining their building blocks when conditions changed — that confused scale with safety.</p>
+
+    <p>The travel graveyard is full of companies that confused scale with durability: Thomas Cook, with 178 years of history and €1.6 billion in revenue, gone in 2019. Monarch, Flybe, Wow Air — all scale operations that failed to adapt when the system shifted beneath them. Scale without adaptability is not a moat. It is mass that makes the fall harder.</p>
+
+    <h3>Geoffrey West and the Science of Cities</h3>
+
+    <p>West's work on cities and scaling offers another lens. Cities, unlike companies, almost never die — and they grow more productive, more innovative, and more economically dense per capita as they scale. The reason: cities are open, adaptive networks. Companies are closed, hierarchical systems. The lesson for travel investors is to look for businesses that behave more like cities than like companies — open platforms, network effects, permissionless participation, and the capacity to generate returns that compound faster than the system itself grows.</p>
+
+    <p>This is why platform businesses in travel have historically outcompeted operators on returns. The platform is the city. The operator is the building. Buildings generate cash flows. Cities generate civilisations.</p>
+
+    <h3>Non-Zero-Sum: Nick Sleep and NZS Capital</h3>
+
+    <p>This complexity lens is where two investment frameworks converge on the same insight from different directions.</p>
+
+    <p>Nick Sleep spent fifteen years running Nomad Investment Partnership with Qais Zakaria, generating one of the best long-term records in investment history. His key conceptual contribution was identifying what he called <em>destination businesses</em> — companies so integral to customers' lives and supply chains that traffic flows to them without ongoing persuasion. Amazon, Costco, and a handful of others. The mechanism behind destination businesses is non-zero-sum value creation: the business creates so much genuine value for customers that customers don't need to be persuaded to return, and the compounding relationship between customer and business becomes self-sustaining.</p>
+
+    <p>Sleep's <em>robustness ratio</em> — the proportion of revenue that a business could theoretically pass back to customers before they'd leave — is one of the most useful qualitative filters in investing. The higher the ratio, the more durable the business. Costco's membership model is essentially a mechanism for continuously returning value to customers. Amazon's obsessive cost reduction and Prime membership create the same effect. In travel, the businesses that approximate this are rare: the truly beloved hospitality brands, the platforms that have made themselves genuinely indispensable, the loyalty ecosystems that customers actively want to be enrolled in.</p>
+
+    <p>NZS Capital, the investment firm run by Brad Slingerlend and Brinton Johns, built their entire investment philosophy around the properties of complex adaptive systems. Their core framework distinguishes between <em>resilient</em> and <em>fragile</em> nodes within a network. The most robust participants in complex ecosystems are not the ones extracting the most value from the system — they're the ones enabling others to thrive alongside them. The keystone species in an ecosystem isn't the apex predator. It's the organism whose removal causes the most systemic disruption. In semiconductor supply chains, extreme specialisation created a network of interdependent companies with above-average margins distributed across the value chain — a non-zero-sum equilibrium where TSMC, ASML, ARM, and Nvidia all compound together. In travel, the equivalent looks like an airline-hotel-local operator partnership that grows the total market rather than fighting for static share.</p>
+
+    <p>My own investment approach has been rewired by these frameworks. I look for travel and travel-adjacent businesses that have the DNA of keystone species: slow-growth resilience in fragmented markets, digital assets that scale at near-zero marginal cost, potential for increasing returns, and the capacity to spawn new business lines without losing their core identity. The best of them create positive-sum outcomes for their entire ecosystem — reinforcing their own position every time the network adapts. I'm not looking for businesses that can survive the next COVID. I'm looking for businesses that emerge from the next COVID structurally stronger, the way Airbnb emerged from 2020 as a fundamentally different and more powerful company than it entered it.</p>
+
+    <!-- PART TWO -->
+    <h2>Part Two: Carlota Perez and the Architecture of Technological Revolutions</h2>
+
+    <p>Understanding what travel is — a complex adaptive system with antifragile properties and network dynamics — is only the first analytical layer. The second layer asks: <em>when</em> are we in travel's technological evolution, and what does that mean for where value will concentrate in the next decade?</p>
+
+    <p>Carlota Perez's framework of technological revolutions is among the most powerful and underappreciated tools in long-term investing. Her work, synthesised in <em>Technological Revolutions and Financial Capital</em>, identifies five major technological revolutions since the Industrial Revolution, each following the same structural arc with extraordinary consistency.</p>
+
+    <h3>The Perez Framework</h3>
+
+    <p>Each technological revolution, Perez argues, unfolds in two distinct phases separated by a turning point, typically a financial crisis.</p>
+
+    <p>The <strong>Installation Period</strong> is when the new technology's infrastructure is laid down. Financial capital leads, speculative investment floods in, new infrastructure is built ahead of productive demand, and the period typically ends in a speculative crash when financial capital has built more than the economy can immediately absorb. The railway mania of the 1840s. The dot-com crash of 2000. The excess is real — but so is the infrastructure that remains after the crash, which becomes the foundation for the next phase.</p>
+
+    <p>The <strong>Deployment Period</strong> follows the crash. Production capital — real businesses, real customers, real cash flows — takes over from financial speculation. The infrastructure built during Installation is now deployed productively across the economy. Returns normalise, value distributes more broadly, and the full societal impact of the technology becomes visible. This is when the greatest sustained wealth creation typically occurs — not during the speculative Installation phase, but during the disciplined Deployment phase that follows.</p>
+
+    <p>Perez identifies five revolutions on this pattern:</p>
+
+    <ol class="revolutions">
+      <li><span class="num">I</span><span>The Industrial Revolution (1771 onwards) — textile machinery, water power, iron</span></li>
+      <li><span class="num">II</span><span>Age of Steam and Railways (1829 onwards)</span></li>
+      <li><span class="num">III</span><span>Age of Steel and Heavy Engineering (1875 onwards) — electricity, chemicals</span></li>
+      <li><span class="num">IV</span><span>Age of Oil, Automobiles and Mass Production (1908 onwards)</span></li>
+      <li><span class="num">V</span><span>Age of Information and Telecommunications (1971 onwards) — computers, software, internet</span></li>
+    </ol>
+
+    <h3>Where Are We Now?</h3>
+
+    <p>The fifth revolution — Information and Telecommunications — has been playing out since the early 1970s, with its Installation phase broadly corresponding to the tech buildout of the 1980s and 1990s, its turning point crash in 2000–2001, and its Deployment phase continuing through the 2000s and 2010s.</p>
+
+    <p>In travel specifically, the Deployment of the fifth revolution looks like the OTA era: Booking, Expedia, Airbnb, and the entire digital distribution infrastructure that was built on the internet's installed base. These are Deployment-phase businesses — they took the infrastructure of the fifth revolution and productively deployed it to transform how travel is discovered, booked, and experienced. The OTA era is not a new technological revolution. It is the mature deployment of an existing one.</p>
+
+    <p>But there is strong evidence that a sixth revolution is now in its Installation phase — or, more precisely, that we are living through the beginning of a new paradigm built on the convergence of artificial intelligence, clean energy, autonomous systems, and biological computation. The specific technologies are debated; the structural pattern is not. The infrastructure of the next era is being built right now, ahead of full productive deployment, with financial capital flooding in ahead of proven cash flows. This is Installation phase behaviour.</p>
+
+    <p>For travel investors, Perez's framework suggests a crucial insight: the businesses that will define travel's next era are not the ones optimising the existing deployment. They are the ones laying the infrastructure of the next installation — and the most important question is which companies will control the productive deployment of that infrastructure when the turning point arrives.</p>
+
+    <h3>What Gets Disrupted and What Gets Created</h3>
+
+    <p>Each technological revolution disrupts some incumbent travel businesses while creating entirely new categories. The automobile didn't just change how people moved — it destroyed the canal and coaching inn industries while creating entirely new ones: motels, drive-in restaurants, suburban resort culture, the American road trip as a cultural form. The commercial jet didn't just make existing travel faster — it created the package holiday, the global hotel chain, and the modern tourism economy, none of which were conceivable before it.</p>
+
+    <p>The current convergence of AI, electrification, and autonomous systems is doing something structurally similar. It is not merely making existing travel faster or cheaper. It is creating new categories of travel experience, new infrastructure requirements, new distribution architectures, and new economic models — many of which are not yet conceivable to incumbents optimised for the existing paradigm.</p>
+
+    <p>The businesses I find most interesting are those positioned at the intersection of the existing Deployment phase (where cash flows are real) and the emerging Installation phase (where the next moats are being established). These are rare — most businesses are optimised for one phase or the other. But when you find them, the compound returns can be extraordinary.</p>
+
+    <!-- PART THREE -->
+    <h2>Part Three: The High Ground — Packy McCormick and the Battle for Chokepoints</h2>
+
+    <p>The third analytical layer is the most practically useful for capital allocation. Given that travel is a complex adaptive system in the midst of a technological transition, <em>where within the system will value concentrate in the next cycle?</em></p>
+
+    <p>Packy McCormick's framework of high ground strategy, developed through his writing at Not Boring, provides a compelling answer. It draws on military strategy, network theory, and the history of platform businesses to identify a consistent pattern: within complex systems, certain nodes achieve disproportionate, durable power not through brute force or capital but through <em>positional advantage</em>. They occupy the high ground — the chokepoints, the enabling infrastructure, the layers that everything else runs on.</p>
+
+    <h3>The Logic of High Ground</h3>
+
+    <p>High ground in military terms is position that confers advantage regardless of the specific engagement. You don't need to be stronger than your opponent if you're higher than them — gravity works in your favour. The strategic imperative, historically, has always been to take and hold the high ground before the battle begins, not during it.</p>
+
+    <p>In business, high ground means the same thing: positional advantage that compounds regardless of which specific participants win in adjacent layers. The payment rail doesn't need to know which merchant wins. The operating system doesn't need to know which application succeeds. The port doesn't need to predict which cargo flows through it. The high ground captures value from the overall growth of the system, not from any single participant's success or failure within it.</p>
+
+    <p>This is why the highest-return businesses in technology have consistently been the infrastructure layers: operating systems, cloud platforms, payment networks, semiconductor architectures. Not because they were the most visible, but because they occupied positions where every adjacent activity was forced to pay rent. Microsoft didn't need to predict which applications would succeed on Windows. AWS doesn't need to predict which startups will win. Visa doesn't need to predict which merchants will thrive.</p>
+
+    <h3>Where is Travel's High Ground Today?</h3>
+
+    <p>In travel's current architecture, the high ground has been held by the OTA distribution layer. Booking, Expedia, and Airbnb occupy positions where the majority of travel demand flows through them before reaching suppliers. Hotels, airlines, tour operators, and activity providers are all, to varying degrees, dependent on these platforms for demand access. The platforms don't need to predict which hotel wins in a given market — they capture a percentage of every transaction regardless.</p>
+
+    <p>But the high ground is not permanent. It shifts with each technological transition. The question that matters for the next decade is: <em>what dislodges the OTA layer from its current position, and what occupies the high ground of travel's next architecture?</em></p>
+
+    <h3>The AI Transition and the Coming Shift</h3>
+
+    <p>The answer, I believe, is the emergence of agentic AI as a new orchestration layer in travel. This is not a modest prediction about efficiency improvements. It is a structural claim about a platform shift comparable in significance to the emergence of the OTA layer itself.</p>
+
+    <p>The current OTA model is fundamentally a search-and-display architecture: it aggregates inventory, surfaces options, and facilitates a human decision. The human remains the agent. The platform is a search engine with a transaction function appended. This model has been extraordinarily profitable because it solved a real information problem — the fragmentation of travel inventory across thousands of suppliers was genuinely difficult to navigate without aggregation.</p>
+
+    <p>But agentic AI collapses the search problem in a different way. An AI agent that can understand complex travel preferences, access live inventory across all suppliers, negotiate rates, handle payments, manage logistics, respond to disruptions, and optimise itineraries in real time doesn't need the OTA's search interface. It becomes the interface. The demand for OTA-style inventory aggregation does not disappear — but the value of being the platform that humans use to discover and transact is significantly diminished when the AI agent makes those decisions autonomously.</p>
+
+    <p>This is the emerging high ground: the AI orchestration layer that sits above the existing supply and distribution architecture and controls how demand is expressed, routed, and fulfilled. The company that controls this layer doesn't need to own hotels, airlines, or OTAs. It needs to own the relationship between the traveller's expressed preferences and the activation of the supply system that fulfils them. It needs to be the operating system of travel demand.</p>
+
+    <h3>What This Looks Like in Practice</h3>
+
+    <p>The companies building toward this position are not primarily the incumbent OTAs. They are AI-native platforms with access to supply APIs, real-time pricing data, and the language model capability to translate complex human preferences into multi-supplier itinerary construction and dynamic rebooking. They are also, potentially, the consumer hardware and software platforms — Apple, Google, Anthropic — whose AI assistants become the primary interface through which people interact with the world, including travel planning and booking.</p>
+
+    <p>The most dangerous scenario for incumbent OTAs is not direct competition from a better OTA. It is the commoditisation of search and discovery by AI assistants that make the OTA interface irrelevant — the same way mobile internet made desktop search irrelevant for many purposes. If a traveller's AI assistant knows their preferences, has access to live inventory, can negotiate rates, and handles the entire booking without the traveller needing to visit a platform, the OTA has lost its positional advantage.</p>
+
+    <p>This creates a clear framework for identifying the travel businesses worth owning over the next decade. The question for every potential investment is: <em>where does this business sit relative to the emerging high ground?</em> Is it building infrastructure that the AI orchestration layer will depend on — live inventory APIs, dynamic pricing systems, real-time availability data? Is it building the AI orchestration layer itself? Is it a destination business with such strong direct customer relationships that it can survive disintermediation? Or is it an incumbent sitting between suppliers and demand aggregation, exposed to structural disruption from the platform shift?</p>
+
+    <h3>The New Vertical Integrators</h3>
+
+    <p>There is one more dimension to high ground strategy in travel that McCormick's framework illuminates: the emergence of what he calls vertical integrators — businesses that compress multiple layers of a value chain into a single, unified experience, capturing margin at each layer while creating a customer relationship that is genuinely difficult to replicate.</p>
+
+    <p>In travel, the emerging vertical integrators are not the companies adding services to existing hotel or airline models. They are the companies building entirely new integrated stacks: own the customer relationship, own the accommodation, own the transport, own the activity layer, own the payments, own the loyalty mechanism. Each layer reinforces the others. The customer relationship generates data that improves the product. The product quality strengthens the customer relationship. The loyalty mechanism makes switching progressively more costly.</p>
+
+    <p>Atour in China is a partial example: a hotel chain that turned its rooms into retail showrooms, its staff into brand ambassadors, and its loyalty programme into a consumer goods distribution channel. The hotel is the customer acquisition mechanism. The retail ecosystem is the high-margin, capital-light business sitting on top of it. The integration creates a moat that pure-play hotels and pure-play retailers both lack.</p>
+
+    <p>The next generation of travel businesses that interest me most are those attempting something similar at larger scale: using accommodation or transport as the customer acquisition layer, then deploying AI-native services, payments, and loyalty mechanisms that turn a transactional relationship into a compounding one.</p>
+
+    <!-- SYNTHESIS -->
+    <h2>Synthesis: What I Look For</h2>
+
+    <p>Combining these three frameworks produces a clear, if demanding, investment filter.</p>
+
+    <div class="synthesis-item">
+      <p><strong>From complex adaptive systems theory:</strong> I look for businesses that behave like keystone species — whose removal or failure would cause disproportionate systemic disruption, and whose success creates non-zero-sum value for the participants around them. These businesses are differentiated from extractive platforms by the sign of their network effects: positive-sum value creation, where more participants make the system better for all, versus negative-sum extraction, where the platform's gain comes at the direct expense of suppliers or customers.</p>
+    </div>
+
+    <div class="synthesis-item">
+      <p><strong>From Perez's technological revolution framework:</strong> I look for businesses positioned at the transition between the current deployment phase and the emerging installation phase. These businesses have real cash flows from the current architecture (which funds the transition) while building the infrastructure or capabilities that will define the next one. The timing matters: too early in Installation phase means burning cash on infrastructure before productive deployment; too deep in Deployment phase means optimising a paradigm that is approaching replacement. The interesting position is the one that straddles both.</p>
+    </div>
+
+    <div class="synthesis-item">
+      <p><strong>From high ground strategy:</strong> I look for businesses building or occupying positional advantages that will compound through the AI transition rather than being disrupted by it. This means either owning the infrastructure that AI orchestration will depend on — live inventory, dynamic pricing, real-time data — or owning customer relationships strong enough to survive disintermediation, or building the orchestration layer itself.</p>
+    </div>
+
+    <p>The businesses that satisfy all three filters simultaneously are rare. When I find one, I want to own it for a very long time.</p>
+
+    <p>My current investments — in PDD, Brookfield, Wise, and operators across hospitality and marine manufacturing — are all attempts to apply some version of this framework. They are not equal in their satisfaction of all three criteria. But each represents a thesis about positional advantage within a complex adaptive system that is undergoing a technological transition.</p>
+
+    <p>The portfolio I am building toward is one where each position is a keystone species in its sector, sitting at the installation-deployment transition, and occupying or building toward the high ground of its technology layer. That is a long way of describing what Nick Sleep called destination businesses — companies so integral to the systems they inhabit that the system reorganises around them rather than displacing them.</p>
+
+    <!-- CODA -->
+    <div class="coda">
+      <p class="coda-label">Coda</p>
+      <h2 style="border-top:none; padding-top:0; margin-top:0;">The Japanese Ryokan</h2>
+
+      <p>I return, always, to Nishiyama Onsen Keiunkan. Not because ancient hospitality is directly comparable to modern platform businesses, but because it embodies something true about the travel system that no financial model captures: the compound effect of genuine trust, cultural depth, and service excellence built over generations.</p>
+
+      <p>The ryokan has survived because it was never merely a hotel. It is an institution, an expression of a place, a keeper of a tradition that guests travel specifically to experience. Its moat is not a network effect or a switching cost. It is something closer to what Pirsig meant by Quality — the pre-intellectual recognition of something that resonates beyond the transaction.</p>
+
+      <p>The best travel businesses of the next era will need to earn something similar, even if the mechanisms are utterly different. The AI orchestration layer will make the transactional parts of travel infinitely more efficient. What it cannot replicate is the reason people travel in the first place: the desire for genuine experience, human connection, and the specific feeling — untranslatable in Japanese, untranslatable in English — of sunlight through leaves.</p>
+
+      <p>The businesses that understand this will build the high ground of travel's next era. The ones that don't will optimise themselves into irrelevance, one efficiency gain at a time.</p>
+    </div>
+
+  </article>
+
+  <div class="footer-nav">
+    <a href="/#writing">← All writing</a>
+    <span>© 2026 Lee Kelsall</span>
+  </div>
+
+</body>
+</html>

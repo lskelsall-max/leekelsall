@@ -2,104 +2,215 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Why Travel is the Ultimate Complex Adaptive System — Lee Kelsall</title>
+
+  <meta property="og:title" content="Why Travel is the Ultimate Complex Adaptive System — Lee Kelsall" />
+  <meta property="og:description" content="Complexity science, technological revolutions, and the coming battle for the high ground of travel's next era." />
+  <meta property="og:url" content="https://leekelsall.com/why-travel-is-the-ultimate-complex-adaptive-system" />
+  <meta property="og:type" content="article" />
   <meta name="description" content="Complexity science, technological revolutions, and the coming battle for the high ground of travel's next era." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --black: #111111; --grey: #666666; --light-grey: #999999; --rule: #e8e8e4; --bg: #fafaf8; --max: 640px; }
-    html { font-size: 18px; }
-    body { background: var(--bg); color: var(--black); font-family: 'EB Garamond', Georgia, serif; line-height: 1.75; padding: 64px 32px 120px; max-width: var(--max); margin: 0 auto; }
 
-    nav { display: flex; align-items: baseline; gap: 24px; margin-bottom: 56px; }
-    nav a { font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 300; color: var(--grey); text-decoration: none; letter-spacing: 0.05em; text-transform: lowercase; transition: color 0.15s ease; }
-    nav a.name { font-family: 'EB Garamond', Georgia, serif; font-size: 1.1rem; font-weight: 500; letter-spacing: 0.01em; margin-right: auto; text-transform: none; color: var(--black); }
+    :root {
+      --black: #111111;
+      --grey: #666666;
+      --light-grey: #999999;
+      --rule: #e8e8e4;
+      --bg: #fafaf8;
+      --max: 640px;
+    }
+
+    html { font-size: 18px; }
+
+    body {
+      background: var(--bg);
+      color: var(--black);
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.75;
+      padding: 64px 32px 120px;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* ── Nav ── */
+    nav {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+
+    nav a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--grey);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+      transition: color 0.15s ease;
+    }
+
+    nav a.name {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      margin-right: auto;
+      text-transform: none;
+      color: var(--black);
+    }
+
     nav a:hover { color: var(--black); }
 
-    header { padding: 3rem 0 1.5rem; border-top: 1px solid var(--rule); }
-    .label { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; color: var(--light-grey); margin-bottom: 1.25rem; }
-    h1 { font-size: 2rem; font-weight: 400; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 1rem; }
-    .subtitle { font-size: 1.05rem; color: var(--grey); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
-    .meta { font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
-
-    article { padding: 1.5rem 0 5rem; }
-    p { margin-bottom: 1.4rem; font-size: 1rem; }
-    p:last-child { margin-bottom: 0; }
-
-    h2 { font-family: 'DM Mono', monospace; font-size: 0.68rem; font-weight: 400; color: var(--light-grey); letter-spacing: 0.1em; text-transform: uppercase; margin: 3.5rem 0 1.5rem; padding-top: 2rem; border-top: 1px solid var(--rule); }
-
-    /* Sub-section headings — italic serif */
-    h3 { font-size: 1.15rem; font-weight: 500; font-style: italic; margin: 2.5rem 0 0.9rem; color: var(--black); }
-
-    em { font-style: italic; }
-    strong { font-weight: 500; }
-
-    hr { border: none; border-top: 1px solid var(--rule); margin: 3rem 0; }
-
-    ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
-    ol li { margin-bottom: 0.5rem; font-size: 1rem; }
-
-    /* TL;DR */
-    .tldr { border-left: 2px solid #e0e0dc; margin: 0 0 2rem; padding: 1rem 1.25rem; background: rgba(0,0,0,0.015); }
-    .tldr p { font-size: 0.92rem; color: var(--grey); font-style: italic; margin-bottom: 0; line-height: 1.65; }
-    .tldr strong { font-style: normal; color: var(--black); }
-
-    /* Synthesis pull-quote blocks */
-    .synthesis-item {
-      padding: 1.25rem 0 1.25rem 1.25rem;
-      border-left: 2px solid var(--rule);
-      margin-bottom: 1.5rem;
-    }
-    .synthesis-item p { margin-bottom: 0; font-size: 0.97rem; }
-    .synthesis-item strong { color: var(--black); }
-
-    /* Coda styling */
-    .coda {
-      margin-top: 3.5rem;
-      padding-top: 2.5rem;
+    /* ── Header ── */
+    header {
+      padding: 3rem 0 2.5rem;
       border-top: 1px solid var(--rule);
+      margin-bottom: 0;
     }
-    .coda .coda-label {
+
+    .label {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
       font-weight: 300;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--light-grey);
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
 
-    /* Revolution list */
-    .revolutions {
-      margin: 1.5rem 0;
-      padding: 0;
-      list-style: none;
+    h1 {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
     }
-    .revolutions li {
-      display: flex;
-      gap: 1rem;
-      padding: 0.6rem 0;
-      border-bottom: 1px solid var(--rule);
-      font-size: 0.95rem;
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--grey);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
     }
-    .revolutions li:first-child { border-top: 1px solid var(--rule); }
-    .revolutions li .num {
+
+    .meta {
       font-family: 'DM Mono', monospace;
-      font-size: 0.6rem;
+      font-size: 0.62rem;
       font-weight: 300;
       color: var(--light-grey);
-      padding-top: 0.35rem;
-      min-width: 1.2rem;
+      letter-spacing: 0.04em;
     }
 
-    .footer-nav { padding: 2rem 0 3rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-family: 'DM Mono', monospace; font-size: 0.62rem; font-weight: 300; color: var(--light-grey); letter-spacing: 0.04em; }
-    .footer-nav a { color: var(--black); text-decoration: none; }
+    /* ── Body ── */
+    article {
+      padding: 1.5rem 0 5rem;
+    }
+
+    p {
+      margin-bottom: 1.4rem;
+      font-size: 1rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    h2 {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: var(--light-grey);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 3.5rem 0 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .tldr {
+      border-left: 2px solid #e0e0dc;
+      margin: 0;
+      padding: 1rem 1.25rem;
+      background: rgba(0,0,0,0.015);
+    }
+
+    .tldr p {
+      font-size: 0.92rem;
+      color: var(--grey);
+      font-style: italic;
+      margin-bottom: 0;
+      line-height: 1.65;
+    }
+
+    .tldr strong {
+      font-style: normal;
+      color: var(--black);
+    }
+
+    .tldr + h2 {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      font-style: italic;
+      margin: 2.5rem 0 1rem;
+      color: var(--black);
+    }
+
+    em { font-style: italic; }
+    strong { font-weight: 500; }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 3rem 0;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    ul li, ol li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    /* ── Footer nav ── */
+    .footer-nav {
+      padding: 2rem 0 3rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      font-weight: 300;
+      color: var(--light-grey);
+      letter-spacing: 0.04em;
+    }
+
+    .footer-nav a {
+      color: var(--black);
+      text-decoration: none;
+    }
+
     .footer-nav a:hover { text-decoration: underline; }
 
-    @media (max-width: 480px) { body { padding: 40px 20px 80px; } h1 { font-size: 1.6rem; } }
+    @media (max-width: 480px) {
+      body { padding: 40px 20px 80px; }
+      h1 { font-size: 1.6rem; }
+    }
   </style>
 </head>
 <body>
@@ -108,11 +219,12 @@
     <a href="/" class="name">Lee Kelsall</a>
     <a href="/#writing">writing</a>
     <a href="/#now">now</a>
+    <a href="/resources">resources</a>
     <a href="mailto:lee@komorebiholdings.com">contact</a>
   </nav>
 
   <header>
-    <p class="label">Strategy</p>
+    <p class="label">Essay</p>
     <h1>Why Travel is the Ultimate Complex Adaptive System</h1>
     <p class="subtitle">Complexity science, technological revolutions, and the coming battle for the high ground of travel's next era.</p>
     <p class="meta">2025 &nbsp;·&nbsp; 20 min read</p>
@@ -121,14 +233,17 @@
   <article>
 
     <div class="tldr">
-      <p><strong>TL;DR —</strong> Travel is a $10.9 trillion market — close to ten percent of global GDP, employing one in ten people worldwide. But those numbers miss the point. They describe the size of something without explaining its nature. Travel isn't an industry with neat boundaries. It's something harder to define and more interesting to think about: a complex adaptive system, a living network of interdependent parts shaped by economics, technology, politics, and human behaviour, evolving continuously in ways no single actor can predict or control.</p>
+      <p><strong>TL;DR —</strong> Travel is a $10.9 trillion complex adaptive system — not a sector with neat boundaries, but a living network of interdependent parts shaped by economics, technology, politics, and human behaviour. This essay applies three frameworks to understand where value concentrates within it: complexity science and antifragility (Part One), Carlota Perez's architecture of technological revolutions (Part Two), and Packy McCormick's high ground strategy (Part Three). The central argument: agentic AI is about to do to the OTA layer what the OTA layer did to the travel agent.</p>
     </div>
+
+    <h2>Introduction</h2>
+
+    <p>Travel is a $10.9 trillion market — close to ten percent of global GDP, employing one in ten people worldwide. But those numbers miss the point. They describe the size of something without explaining its nature. Travel isn't an industry with neat boundaries. It's something harder to define and more interesting to think about: a complex adaptive system, a living network of interdependent parts shaped by economics, technology, politics, and human behaviour, evolving continuously in ways no single actor can predict or control.</p>
 
     <p>I define travel broadly: any asset, product, service, experience, or infrastructure that enables or supports people moving from one place to another — including the destinations that make the journey worthwhile. An Uber. A flight across oceans. A digital booking platform. The roads, ports, and runways that make movement possible. The hotel, safari reserve, or ryokan at the other end. The local market, the guided tour, the restaurant that completes the experience. Taken together, this network forms the circulatory system of the global economy: capital intensive, politically sensitive, indispensable, and perpetually on the edge of reinvention.</p>
 
     <p>Most investors treat travel as a sector. I treat it as a system. The distinction matters enormously for how you think, what you look for, and where you place your conviction.</p>
 
-    <!-- PART ONE -->
     <h2>Part One: What Travel Actually Is</h2>
 
     <h3>The Oldest Network on Earth</h3>
@@ -171,6 +286,14 @@
 
     <p>This is why platform businesses in travel have historically outcompeted operators on returns. The platform is the city. The operator is the building. Buildings generate cash flows. Cities generate civilisations.</p>
 
+    <p>Jane Jacobs takes this further in a way that anticipates the AI transition more precisely than West does. Her core argument in <em>Cities and the Wealth of Nations</em> is that the nation-state is not the salient economic entity — the city is. Cities are the units that engage in import-replacing, that generate genuine feedback loops between production and demand, that compound innovation through proximity and diversity. Nations are a useful fiction that obscures the real mechanics of how economies actually work.</p>
+
+    <p>But Allen Farrington, writing about blockchains and digital infrastructure through the lens of Jacobs, identified something Jacobs couldn't have foreseen in 1984: digital platforms have dissolved even the city as the salient economic entity. Where does Booking.com's economic activity happen? Amsterdam, technically. But that is a legal and tax fiction, not an economic truth. The platform's real activity happens on the internet — a geography-free network of supply, demand, data, and transaction. The platform <em>is</em> the salient economic entity. It has its own feedback loops, its own import-replacing dynamics, its own compounding returns. It is a city that exists nowhere and everywhere simultaneously.</p>
+
+    <p>This matters enormously for travel investors. The most powerful travel businesses of the last two decades were not physical hospitality companies — they were digital salient economic entities that happened to transact in physical experiences. Booking.com's moat is not in Amsterdam. It is in the self-reinforcing network that makes its feedback loops more valuable with every additional hotel and every additional traveller that passes through it. The platform replaced the need to import discovery — and in doing so, became the city that all the operators are merely buildings within.</p>
+
+    <p>The AI orchestration layer will do the same thing at the next level of abstraction. It will not be located anywhere. It will not be owned by any single geography or incumbent. It will be a new salient economic entity that exists in the relationship between expressed preference and fulfilled experience — and whichever business controls that relationship will have built the city that the next generation of travel operators will be buildings within.</p>
+
     <h3>Non-Zero-Sum: Nick Sleep and NZS Capital</h3>
 
     <p>This complexity lens is where two investment frameworks converge on the same insight from different directions.</p>
@@ -183,7 +306,6 @@
 
     <p>My own investment approach has been rewired by these frameworks. I look for travel and travel-adjacent businesses that have the DNA of keystone species: slow-growth resilience in fragmented markets, digital assets that scale at near-zero marginal cost, potential for increasing returns, and the capacity to spawn new business lines without losing their core identity. The best of them create positive-sum outcomes for their entire ecosystem — reinforcing their own position every time the network adapts. I'm not looking for businesses that can survive the next COVID. I'm looking for businesses that emerge from the next COVID structurally stronger, the way Airbnb emerged from 2020 as a fundamentally different and more powerful company than it entered it.</p>
 
-    <!-- PART TWO -->
     <h2>Part Two: Carlota Perez and the Architecture of Technological Revolutions</h2>
 
     <p>Understanding what travel is — a complex adaptive system with antifragile properties and network dynamics — is only the first analytical layer. The second layer asks: <em>when</em> are we in travel's technological evolution, and what does that mean for where value will concentrate in the next decade?</p>
@@ -200,12 +322,12 @@
 
     <p>Perez identifies five revolutions on this pattern:</p>
 
-    <ol class="revolutions">
-      <li><span class="num">I</span><span>The Industrial Revolution (1771 onwards) — textile machinery, water power, iron</span></li>
-      <li><span class="num">II</span><span>Age of Steam and Railways (1829 onwards)</span></li>
-      <li><span class="num">III</span><span>Age of Steel and Heavy Engineering (1875 onwards) — electricity, chemicals</span></li>
-      <li><span class="num">IV</span><span>Age of Oil, Automobiles and Mass Production (1908 onwards)</span></li>
-      <li><span class="num">V</span><span>Age of Information and Telecommunications (1971 onwards) — computers, software, internet</span></li>
+    <ol>
+      <li>The Industrial Revolution (1771 onwards) — textile machinery, water power, iron</li>
+      <li>Age of Steam and Railways (1829 onwards)</li>
+      <li>Age of Steel and Heavy Engineering (1875 onwards) — electricity, chemicals</li>
+      <li>Age of Oil, Automobiles and Mass Production (1908 onwards)</li>
+      <li>Age of Information and Telecommunications (1971 onwards) — computers, software, internet</li>
     </ol>
 
     <h3>Where Are We Now?</h3>
@@ -226,7 +348,6 @@
 
     <p>The businesses I find most interesting are those positioned at the intersection of the existing Deployment phase (where cash flows are real) and the emerging Installation phase (where the next moats are being established). These are rare — most businesses are optimised for one phase or the other. But when you find them, the compound returns can be extraordinary.</p>
 
-    <!-- PART THREE -->
     <h2>Part Three: The High Ground — Packy McCormick and the Battle for Chokepoints</h2>
 
     <p>The third analytical layer is the most practically useful for capital allocation. Given that travel is a complex adaptive system in the midst of a technological transition, <em>where within the system will value concentrate in the next cycle?</em></p>
@@ -275,49 +396,34 @@
 
     <p>The next generation of travel businesses that interest me most are those attempting something similar at larger scale: using accommodation or transport as the customer acquisition layer, then deploying AI-native services, payments, and loyalty mechanisms that turn a transactional relationship into a compounding one.</p>
 
-    <!-- SYNTHESIS -->
     <h2>Synthesis: What I Look For</h2>
 
     <p>Combining these three frameworks produces a clear, if demanding, investment filter.</p>
 
-    <div class="synthesis-item">
-      <p><strong>From complex adaptive systems theory:</strong> I look for businesses that behave like keystone species — whose removal or failure would cause disproportionate systemic disruption, and whose success creates non-zero-sum value for the participants around them. These businesses are differentiated from extractive platforms by the sign of their network effects: positive-sum value creation, where more participants make the system better for all, versus negative-sum extraction, where the platform's gain comes at the direct expense of suppliers or customers.</p>
-    </div>
+    <p><strong>From complex adaptive systems theory:</strong> I look for businesses that behave like keystone species — whose removal or failure would cause disproportionate systemic disruption, and whose success creates non-zero-sum value for the participants around them. These businesses are differentiated from extractive platforms by the sign of their network effects: positive-sum value creation, where more participants make the system better for all, versus negative-sum extraction, where the platform's gain comes at the direct expense of suppliers or customers.</p>
 
-    <div class="synthesis-item">
-      <p><strong>From Perez's technological revolution framework:</strong> I look for businesses positioned at the transition between the current deployment phase and the emerging installation phase. These businesses have real cash flows from the current architecture (which funds the transition) while building the infrastructure or capabilities that will define the next one. The timing matters: too early in Installation phase means burning cash on infrastructure before productive deployment; too deep in Deployment phase means optimising a paradigm that is approaching replacement. The interesting position is the one that straddles both.</p>
-    </div>
+    <p><strong>From Perez's technological revolution framework:</strong> I look for businesses positioned at the transition between the current deployment phase and the emerging installation phase. These businesses have real cash flows from the current architecture (which funds the transition) while building the infrastructure or capabilities that will define the next one. The timing matters: too early in Installation phase means burning cash on infrastructure before productive deployment; too deep in Deployment phase means optimising a paradigm that is approaching replacement. The interesting position is the one that straddles both.</p>
 
-    <div class="synthesis-item">
-      <p><strong>From high ground strategy:</strong> I look for businesses building or occupying positional advantages that will compound through the AI transition rather than being disrupted by it. This means either owning the infrastructure that AI orchestration will depend on — live inventory, dynamic pricing, real-time data — or owning customer relationships strong enough to survive disintermediation, or building the orchestration layer itself.</p>
-    </div>
+    <p><strong>From high ground strategy:</strong> I look for businesses building or occupying positional advantages that will compound through the AI transition rather than being disrupted by it. This means either owning the infrastructure that AI orchestration will depend on — live inventory, dynamic pricing, real-time data — or owning customer relationships strong enough to survive disintermediation, or building the orchestration layer itself.</p>
 
     <p>The businesses that satisfy all three filters simultaneously are rare. When I find one, I want to own it for a very long time.</p>
 
     <p>My current investments — in PDD, Brookfield, Wise, and operators across hospitality and marine manufacturing — are all attempts to apply some version of this framework. They are not equal in their satisfaction of all three criteria. But each represents a thesis about positional advantage within a complex adaptive system that is undergoing a technological transition.</p>
 
-    <p>The portfolio I am building toward is one where each position is a keystone species in its sector, sitting at the installation-deployment transition, and occupying or building toward the high ground of its technology layer. That is a long way of describing what Nick Sleep called destination businesses — companies so integral to the systems they inhabit that the system reorganises around them rather than displacing them.</p>
+    <p>The portfolio I am building toward is one where each position is a keystone species in its sector, sitting at the installation-deployment transition, and occupying or building toward the high ground of its technology layer. That is a long way of describing what Nick Sleep called destination businesses — companies so integral to the systems they inhabit that the system reorganises around them rather than around them.</p>
 
-    <!-- CODA -->
-    <div class="coda">
-      <p class="coda-label">Coda</p>
-      <h2 style="border-top:none; padding-top:0; margin-top:0;">The Japanese Ryokan</h2>
+    <h2>Coda: The Japanese Ryokan</h2>
 
-      <p>I return, always, to Nishiyama Onsen Keiunkan. Not because ancient hospitality is directly comparable to modern platform businesses, but because it embodies something true about the travel system that no financial model captures: the compound effect of genuine trust, cultural depth, and service excellence built over generations.</p>
+    <p>I return, always, to Nishiyama Onsen Keiunkan. Not because ancient hospitality is directly comparable to modern platform businesses, but because it embodies something true about the travel system that no financial model captures: the compound effect of genuine trust, cultural depth, and service excellence built over generations.</p>
 
-      <p>The ryokan has survived because it was never merely a hotel. It is an institution, an expression of a place, a keeper of a tradition that guests travel specifically to experience. Its moat is not a network effect or a switching cost. It is something closer to what Pirsig meant by Quality — the pre-intellectual recognition of something that resonates beyond the transaction.</p>
+    <p>The ryokan has survived because it was never merely a hotel. It is an institution, an expression of a place, a keeper of a tradition that guests travel specifically to experience. Its moat is not a network effect or a switching cost. It is something closer to what Pirsig meant by Quality — the pre-intellectual recognition of something that resonates beyond the transaction.</p>
 
-      <p>The best travel businesses of the next era will need to earn something similar, even if the mechanisms are utterly different. The AI orchestration layer will make the transactional parts of travel infinitely more efficient. What it cannot replicate is the reason people travel in the first place: the desire for genuine experience, human connection, and the specific feeling — untranslatable in Japanese, untranslatable in English — of sunlight through leaves.</p>
+    <p>The best travel businesses of the next era will need to earn something similar, even if the mechanisms are utterly different. The AI orchestration layer will make the transactional parts of travel infinitely more efficient. What it cannot replicate is the reason people travel in the first place: the desire for genuine experience, human connection, and the specific feeling — untranslatable in Japanese, untranslatable in English — of sunlight through leaves.</p>
 
-      <p>The businesses that understand this will build the high ground of travel's next era. The ones that don't will optimise themselves into irrelevance, one efficiency gain at a time.</p>
-    </div>
+    <p>The businesses that understand this will build the high ground of travel's next era. The ones that don't will optimise themselves into irrelevance, one efficiency gain at a time.</p>
 
   </article>
 
   <div class="footer-nav">
     <a href="/#writing">← All writing</a>
-    <span>© 2026 Lee Kelsall</span>
-  </div>
-
-</body>
-</html>
+    <span>© 2026 Lee 

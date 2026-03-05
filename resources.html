@@ -5,7 +5,6 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources — Lee Kelsall</title>
-
   <meta property="og:title" content="Resources — Lee Kelsall" />
   <meta property="og:description" content="Books, letters, podcasts, and essays that have shaped how I think about travel, investing, and complex systems." />
   <meta property="og:url" content="https://leekelsall.com/resources" />
@@ -69,7 +68,7 @@
     nav a:hover { color: var(--black); }
 
     header {
-      padding: 3rem 0 1.5rem;
+      padding: 1rem 0 1.5rem;
       border-top: 1px solid var(--rule);
     }
 
@@ -88,30 +87,49 @@
       font-weight: 400;
       line-height: 1.25;
       letter-spacing: -0.01em;
-      margin-bottom: 1rem;
     }
 
-    .subtitle {
-      font-size: 1.05rem;
-      color: var(--grey);
+    .intro {
+      padding: 2rem 0 0;
+      border-top: 1px solid var(--rule);
+      margin-top: 1.5rem;
+    }
+
+    .intro p {
+      font-size: 0.97rem;
+      color: var(--black);
+      line-height: 1.75;
+    }
+
+    .intro p + p {
+      margin-top: 0.6rem;
+    }
+
+    .intro blockquote {
+      border-left: 2px solid #deded9;
+      margin: 1.75rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    .intro blockquote p {
       font-style: italic;
-      line-height: 1.6;
+      color: var(--grey);
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    .intro blockquote .attr {
+      display: block;
+      font-style: normal;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      font-weight: 300;
+      color: var(--light-grey);
+      letter-spacing: 0.04em;
+      margin-top: 0.6rem;
     }
 
     section { padding: 3rem 0 0; }
-
-    .intro-framing {
-      padding: 2rem 0 0;
-      border-top: 1px solid var(--rule);
-      margin-top: 2rem;
-    }
-
-    .intro-framing p {
-      font-size: 0.97rem;
-      color: var(--grey);
-      line-height: 1.75;
-      max-width: 640px;
-    }
 
     h2 {
       font-family: 'DM Mono', monospace;
@@ -185,6 +203,21 @@
       color: var(--light-grey);
     }
 
+    .company-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--black);
+      margin: 2rem 0 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--black);
+      display: block;
+    }
+
+    .company-label:first-of-type { margin-top: 1.5rem; }
+
     .footer-nav {
       margin-top: 5rem;
       padding: 2rem 0 3rem;
@@ -222,17 +255,16 @@
   <header>
     <p class="label">Resources</p>
     <h1>Reading &amp; Listening</h1>
-    <p class="subtitle">The books, letters, podcasts, and essays that have most shaped how I think — as an operator, investor, and thinker.</p>
   </header>
 
-  <section class="intro-framing">
-   <p>Lawyer. Operator. Investor. Lifelong student.</p>
-<p>These are the books, letters, and essays that have most shaped how I think. The list is abridged — there is always more to read.</p>
-<blockquote>
-  <p>Shall we be filled and satisfied then? And my spirit said, No, we but level that lift to pass and continue beyond.</p>
-  <p class="attribution">— Walt Whitman, <em>Song of Myself</em></p>
-</blockquote>
-  </section>
+  <div class="intro">
+    <p>Lawyer. Operator. Investor. Lifelong student.</p>
+    <p>These are the books, letters, and essays that have most shaped how I think. The list is abridged — there is always more to read.</p>
+    <blockquote>
+      <p>Shall we be filled and satisfied then? And my spirit said, No, we but level that lift to pass and continue beyond.</p>
+      <span class="attr">— Walt Whitman, Song of Myself</span>
+    </blockquote>
+  </div>
 
 
   <!-- ─── INVESTING & CAPITAL ALLOCATION ─── -->
@@ -273,14 +305,6 @@
       </li>
 
       <li>
-        <span class="tag">Akre</span>
-        <div class="entry">
-          <a href="https://www.acreecapital.com/insights" class="ext" target="_blank" rel="noopener">Chuck Akre Letters &amp; Essays</a>
-          <span class="meta">Chuck Akre · Akre Capital Management</span>
-        </div>
-      </li>
-
-      <li>
         <span class="tag">Pabrai</span>
         <div class="entry">
           <a href="https://www.amazon.com/Dhandho-Investor-Low-Risk-Value-Method/dp/047004389X" class="ext" target="_blank" rel="noopener">The Dhandho Investor</a>
@@ -291,15 +315,15 @@
       <li>
         <span class="tag">Li Lu</span>
         <div class="entry">
-          <a href="https://www.himalayacapital.com/writing" class="ext" target="_blank" rel="noopener">Li Lu — Speeches &amp; Letters</a>
-          <span class="meta">Himalaya Capital · On civilisation, compounding, and the circle of competence</span>
+          <a href="https://www.himcap.com/publications" class="ext" target="_blank" rel="noopener">Speeches &amp; Letters</a>
+          <span class="meta">Li Lu · Himalaya Capital · On civilisation, compounding, and the circle of competence</span>
         </div>
       </li>
 
       <li>
         <span class="tag">Anderson</span>
         <div class="entry">
-          <a href="https://www.bailliegifford.com/en/uk/individual-investors/literature-library/2021/01/graham-or-growth" class="ext" target="_blank" rel="noopener">Graham or Growth? Seeking the Next Amazon</a>
+          <a href="https://resoluteoptimism.bailliegifford.com/" class="ext" target="_blank" rel="noopener">Graham or Growth? Seeking the Next Amazon</a>
           <span class="meta">James Anderson · Baillie Gifford · 2021</span>
         </div>
       </li>
@@ -307,7 +331,7 @@
       <li>
         <span class="tag">Helmer</span>
         <div class="entry">
-          <a href="https://www.amazon.com/7-Powers-Foundations-Business-Strategy/dp/0998116343" class="ext" target="_blank" rel="noopener">7 Powers: The Foundations of Business Strategy</a>
+          <a href="https://www.amazon.com/7-Powers-Foundations-Business-Strategy/dp/0998116319" class="ext" target="_blank" rel="noopener">7 Powers: The Foundations of Business Strategy</a>
           <span class="meta">Hamilton Helmer · 2016</span>
         </div>
       </li>
@@ -315,7 +339,7 @@
       <li>
         <span class="tag">Cunningham</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Quality-Investing-Owning-Exceptional-Businesses/dp/0857196405" class="ext" target="_blank" rel="noopener">Quality Investing</a>
+          <a href="https://www.amazon.com/Quality-Investing-Owning-best-companies/dp/0857195123" class="ext" target="_blank" rel="noopener">Quality Investing</a>
           <span class="meta">Lawrence Cunningham, Torkell Eide &amp; Patrick Hargreaves · 2016</span>
         </div>
       </li>
@@ -323,8 +347,8 @@
       <li>
         <span class="tag">Mauboussin</span>
         <div class="entry">
-          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_measuringthemoat_us.pdf" class="ext" target="_blank" rel="noopener">Measuring the Moat</a>
-          <span class="meta">Michael Mauboussin · Credit Suisse · 2013</span>
+          <a href="https://www.morganstanley.com/im/publication/insights/articles/article_measuringthemoat.pdf" class="ext" target="_blank" rel="noopener">Measuring the Moat</a>
+          <span class="meta">Michael Mauboussin · Morgan Stanley Investment Management</span>
         </div>
       </li>
 
@@ -339,8 +363,8 @@
       <li>
         <span class="tag">Thorndike</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Outsiders-Unconventional-Radically-Rational-Blueprint/dp/1422162672" class="ext" target="_blank" rel="noopener">The Outsiders: Eight Unconventional CEOs and Their Radically Rational Blueprint for Success</a>
-          <span class="meta">William N. Thorndike · 2012 · The definitive case study in capital allocation mastery — eight CEOs who compounded returns by ignoring conventional wisdom and focusing ruthlessly on per-share value</span>
+          <a href="https://www.amazon.com/Outsiders-Unconventional-Radically-Rational-Blueprint/dp/1422162672" class="ext" target="_blank" rel="noopener">The Outsiders</a>
+          <span class="meta">William N. Thorndike · 2012 · The definitive case study in capital allocation mastery</span>
         </div>
       </li>
 
@@ -372,7 +396,7 @@
       <li>
         <span class="tag">Arthur</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Nature-Technology-What-How-Evolves/dp/1416544062" class="ext" target="_blank" rel="noopener">The Nature of Technology: What It Is and How It Evolves</a>
+          <a href="https://www.amazon.com/Nature-Technology-What-How-Evolves/dp/1416544062" class="ext" target="_blank" rel="noopener">The Nature of Technology</a>
           <span class="meta">W. Brian Arthur · 2009</span>
         </div>
       </li>
@@ -412,7 +436,7 @@
       <li>
         <span class="tag">NZS Capital</span>
         <div class="entry">
-          <a href="https://nzscapital.com/complexity-investing/" class="ext" target="_blank" rel="noopener">Complexity Investing</a>
+          <a href="https://www.nzscapital.com/news/complexity" class="ext" target="_blank" rel="noopener">Complexity Investing</a>
           <span class="meta">Brad Slingerlend &amp; Brinton Johns · NZS Capital · 2019</span>
         </div>
       </li>
@@ -421,7 +445,7 @@
         <span class="tag">Meadows</span>
         <div class="entry">
           <a href="https://www.amazon.com/Thinking-Systems-Donella-Meadows/dp/1603580557" class="ext" target="_blank" rel="noopener">Thinking in Systems: A Primer</a>
-          <span class="meta">Donella Meadows · 2008 · The foundational text on systems thinking — feedback loops, stocks and flows, and why complex systems behave the way they do</span>
+          <span class="meta">Donella Meadows · 2008</span>
         </div>
       </li>
 
@@ -486,7 +510,7 @@
         <span class="tag">Brand</span>
         <div class="entry">
           <a href="https://press.stripe.com/maintenance-part-one" class="ext" target="_blank" rel="noopener">Maintenance: Of Everything, Part One</a>
-          <span class="meta">Stewart Brand · Stripe Press · 2025 · A civilisational argument for maintenance — from sailboats to weapons to cities — as the radical, often invisible act that keeps everything working.</span>
+          <span class="meta">Stewart Brand · Stripe Press · 2025</span>
         </div>
       </li>
 
@@ -550,8 +574,8 @@
       <li>
         <span class="tag">Thiel</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296" class="ext" target="_blank" rel="noopener">Zero to One: Notes on Startups, or How to Build the Future</a>
-          <span class="meta">Peter Thiel with Blake Masters · 2014 · On monopoly, secrets, and why the best businesses create something genuinely new rather than competing in existing markets</span>
+          <a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296" class="ext" target="_blank" rel="noopener">Zero to One</a>
+          <span class="meta">Peter Thiel with Blake Masters · 2014</span>
         </div>
       </li>
 
@@ -559,24 +583,16 @@
   </section>
 
 
-  <!-- ─── BUSINESS BUILDING & STRATEGY ─── -->
+  <!-- ─── BUSINESS BUILDING ─── -->
   <section>
-    <h2>Business Building &amp; Strategy</h2>
+    <h2>Business Building</h2>
     <ul class="resource-list">
 
       <li>
         <span class="tag">Morgan</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Pirate-Inside-Building-Challenger-Organisation/dp/0470860820" class="ext" target="_blank" rel="noopener">The Pirate Inside: Building a Challenger Brand Culture</a>
-          <span class="meta">Adam Morgan · 2004 · On why challenger brands win by thinking and behaving differently — deeply formative for how I think about brand positioning</span>
-        </div>
-      </li>
-
-      <li>
-        <span class="tag">Jantsch</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Referral-Engine-Teaching-Business-Themselves/dp/1591843669" class="ext" target="_blank" rel="noopener">The Referral Engine</a>
-          <span class="meta">John Jantsch · 2010 · A practical framework for building businesses that generate word-of-mouth systematically</span>
+          <a href="https://www.amazon.com/Pirate-Inside-Building-Challenger-Organisation/dp/0470860820" class="ext" target="_blank" rel="noopener">The Pirate Inside</a>
+          <span class="meta">Adam Morgan · 2004 · On why challenger brands win by thinking differently</span>
         </div>
       </li>
 
@@ -584,7 +600,7 @@
         <span class="tag">Collins</span>
         <div class="entry">
           <a href="https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996" class="ext" target="_blank" rel="noopener">Good to Great</a>
-          <span class="meta">Jim Collins · 2001 · Hedgehog concept, level 5 leadership, and what separates durable excellence from temporary performance</span>
+          <span class="meta">Jim Collins · 2001</span>
         </div>
       </li>
 
@@ -592,15 +608,7 @@
         <span class="tag">Chouinard</span>
         <div class="entry">
           <a href="https://www.amazon.com/Let-People-Surfing-Education-Businessman/dp/0143037838" class="ext" target="_blank" rel="noopener">Let My People Go Surfing</a>
-          <span class="meta">Yvon Chouinard · 2005 · How Patagonia built a values-led brand and a business that endures — the model for purpose-driven product companies</span>
-        </div>
-      </li>
-
-      <li>
-        <span class="tag">Peters</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Search-Excellence-Americas-Best-Run-Companies/dp/0060548789" class="ext" target="_blank" rel="noopener">In Search of Excellence</a>
-          <span class="meta">Tom Peters &amp; Robert Waterman · 1982</span>
+          <span class="meta">Yvon Chouinard · 2005 · How Patagonia built a values-led brand that endures</span>
         </div>
       </li>
 
@@ -755,7 +763,7 @@
         <span class="tag">Founders</span>
         <div class="entry">
           <a href="https://www.founderspodcast.com" class="ext" target="_blank" rel="noopener">Founders</a>
-          <span class="meta">David Senra · Lessons from the great entrepreneurs — essential episodes: Rockefeller, Walt Disney, Elon Musk, Isadore Sharp (Four Seasons), Dietrich Mateschitz (Red Bull), Les Schwab</span>
+          <span class="meta">David Senra · Essential episodes: Rockefeller, Walt Disney, Isadore Sharp, Mateschitz, Les Schwab</span>
         </div>
       </li>
 
@@ -817,14 +825,6 @@
       </li>
 
       <li>
-        <span class="tag">Sparkline</span>
-        <div class="entry">
-          <a href="https://www.sparklinecapital.com/post/investing-in-innovation" class="ext" target="_blank" rel="noopener">Investing in Innovation</a>
-          <span class="meta">Sparkline Capital</span>
-        </div>
-      </li>
-
-      <li>
         <span class="tag">Munger</span>
         <div class="entry">
           <a href="https://fs.blog/great-talks/elementary-worldly-wisdom/" class="ext" target="_blank" rel="noopener">Elementary, Worldly Wisdom</a>
@@ -836,7 +836,7 @@
         <span class="tag">Newsletter</span>
         <div class="entry">
           <a href="https://traveltechessentialist.com" class="ext" target="_blank" rel="noopener">Travel Tech Essentialist</a>
-          <span class="meta">Mauricio Prieto · The definitive newsletter on travel technology, distribution, and the evolving tourism stack</span>
+          <span class="meta">Mauricio Prieto · The definitive newsletter on travel technology and distribution</span>
         </div>
       </li>
 
@@ -844,15 +844,15 @@
         <span class="tag">Substack</span>
         <div class="entry">
           <a href="https://techbuzzchina.substack.com" class="ext" target="_blank" rel="noopener">Tech Buzz China</a>
-          <span class="meta">Rui Ma &amp; Ying Lu · The most rigorous English-language source on Chinese tech — consumer internet, platforms, and the competitive dynamics driving PDD, Tencent, and their peers</span>
+          <span class="meta">Rui Ma &amp; Ying Lu · The most rigorous English-language source on Chinese tech</span>
         </div>
       </li>
 
       <li>
         <span class="tag">Substack</span>
         <div class="entry">
-          <a href="https://sitalweek.com" class="ext" target="_blank" rel="noopener">SITALWeek</a>
-          <span class="meta">Brad Slingerlend · Weekly synthesis of technology, business models, and long-term investing — one of the best curated reads in the compounding-investor canon</span>
+          <a href="https://www.nzscapital.com/sitalweek" class="ext" target="_blank" rel="noopener">SITALWeek</a>
+          <span class="meta">Brad Slingerlend · Weekly synthesis of technology, business models, and long-term investing</span>
         </div>
       </li>
 
@@ -860,7 +860,7 @@
         <span class="tag">Substack</span>
         <div class="entry">
           <a href="https://www.notboring.co" class="ext" target="_blank" rel="noopener">Not Boring</a>
-          <span class="meta">Packy McCormick · On strategy, ambition, and the companies building the next economic layer — vertical integrators, energy, and the technology of progress</span>
+          <span class="meta">Packy McCormick · On strategy, ambition, and the companies building the next economic layer</span>
         </div>
       </li>
 
@@ -868,7 +868,7 @@
         <span class="tag">Substack</span>
         <div class="entry">
           <a href="https://interconnect.substack.com" class="ext" target="_blank" rel="noopener">Interconnected</a>
-          <span class="meta">Kevin Xu · The most rigorous bilingual analysis of US–China technology, policy, and geopolitics — essential for understanding PDD, Tencent, and the decoupling narrative</span>
+          <span class="meta">Kevin Xu · Bilingual analysis of US–China technology, policy, and geopolitics</span>
         </div>
       </li>
 
@@ -876,7 +876,7 @@
         <span class="tag">Newsletter</span>
         <div class="entry">
           <a href="https://stratechery.com" class="ext" target="_blank" rel="noopener">Stratechery</a>
-          <span class="meta">Ben Thompson · The gold standard in technology strategy analysis — aggregation theory, platform dynamics, and the business models reshaping every industry</span>
+          <span class="meta">Ben Thompson · The gold standard in technology strategy analysis</span>
         </div>
       </li>
 
@@ -888,49 +888,31 @@
   <section>
     <h2>Company Research</h2>
 
-    <style>
-      .company-label {
-        font-family: 'DM Mono', monospace;
-        font-size: 0.6rem;
-        font-weight: 400;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--black);
-        margin: 2rem 0 0;
-        padding-bottom: 0.4rem;
-        border-bottom: 1px solid var(--black);
-        display: block;
-      }
-      .company-label:first-of-type { margin-top: 1.5rem; }
-    </style>
-
-    <!-- Amazon -->
     <span class="company-label">Amazon</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Stone</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon/dp/0316219266" class="ext" target="_blank" rel="noopener">The Everything Store: Jeff Bezos and the Age of Amazon</a>
+          <a href="https://www.amazon.com/Everything-Store-Jeff-Bezos-Amazon/dp/0316219266" class="ext" target="_blank" rel="noopener">The Everything Store</a>
           <span class="meta">Brad Stone · 2013</span>
         </div>
       </li>
       <li>
         <span class="tag">Bezos</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction/dp/1647820715" class="ext" target="_blank" rel="noopener">Invent and Wander: The Collected Writings of Jeff Bezos</a>
+          <a href="https://www.amazon.com/Invent-Wander-Collected-Writings-Introduction/dp/1647820715" class="ext" target="_blank" rel="noopener">Invent and Wander</a>
           <span class="meta">Jeff Bezos · ed. Walter Isaacson · 2021</span>
         </div>
       </li>
       <li>
         <span class="tag">Bryar &amp; Carr</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Working-Backwards-Insights-Stories-Secrets/dp/1250267595" class="ext" target="_blank" rel="noopener">Working Backwards: Insights, Stories, and Secrets from Inside Amazon</a>
+          <a href="https://www.amazon.com/Working-Backwards-Insights-Stories-Secrets/dp/1250267595" class="ext" target="_blank" rel="noopener">Working Backwards</a>
           <span class="meta">Colin Bryar &amp; Bill Carr · 2021</span>
         </div>
       </li>
     </ul>
 
-    <!-- Berkshire Hathaway -->
     <span class="company-label">Berkshire Hathaway</span>
     <ul class="resource-list">
       <li>
@@ -943,50 +925,36 @@
       <li>
         <span class="tag">Buffett</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1531018327" class="ext" target="_blank" rel="noopener">The Essays of Warren Buffett: Lessons for Corporate America</a>
-          <span class="meta">ed. Lawrence Cunningham · 1997 · Thematically organised extracts from the letters</span>
+          <a href="https://www.amazon.com/Essays-Warren-Buffett-Lessons-Corporate/dp/1531018327" class="ext" target="_blank" rel="noopener">The Essays of Warren Buffett</a>
+          <span class="meta">ed. Lawrence Cunningham · 1997</span>
         </div>
       </li>
       <li>
         <span class="tag">Schroeder</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384619" class="ext" target="_blank" rel="noopener">The Snowball: Warren Buffett and the Business of Life</a>
+          <a href="https://www.amazon.com/Snowball-Warren-Buffett-Business-Life/dp/0553384619" class="ext" target="_blank" rel="noopener">The Snowball</a>
           <span class="meta">Alice Schroeder · 2008 · The authorised biography</span>
         </div>
       </li>
     </ul>
 
-    <!-- Bruker -->
-    <span class="company-label">Bruker Corporation</span>
-    <ul class="resource-list">
-      <li>
-        <span class="tag">Annual Letter</span>
-        <div class="entry">
-          <a href="https://ir.bruker.com/financial-information/annual-reports" class="ext" target="_blank" rel="noopener">Bruker Annual Reports &amp; Shareholder Letters</a>
-          <span class="meta">Frank Laukien · Nasdaq: BRKR</span>
-        </div>
-      </li>
-    </ul>
-
-    <!-- Constellation Software -->
     <span class="company-label">Constellation Software</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Leonard</span>
         <div class="entry">
-          <a href="https://www.csisoftware.com/category/shareholder-letters" class="ext" target="_blank" rel="noopener">Constellation Software Shareholder Letters</a>
+          <a href="https://www.csisoftware.com/category/shareholder-letters" class="ext" target="_blank" rel="noopener">Shareholder Letters</a>
           <span class="meta">Mark Leonard · 2006–present · Among the most instructive capital allocation letters written</span>
         </div>
       </li>
     </ul>
 
-    <!-- Google / Alphabet -->
     <span class="company-label">Google / Alphabet</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Levy</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Plex-Google-Thinks-Works-Shapes/dp/1416596585" class="ext" target="_blank" rel="noopener">In the Plex: How Google Thinks, Works, and Shapes Our Lives</a>
+          <a href="https://www.amazon.com/Plex-Google-Thinks-Works-Shapes/dp/1416596585" class="ext" target="_blank" rel="noopener">In the Plex</a>
           <span class="meta">Steven Levy · 2011</span>
         </div>
       </li>
@@ -999,13 +967,12 @@
       </li>
     </ul>
 
-    <!-- Kaspi -->
     <span class="company-label">Kaspi.kz</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Annual Letter</span>
         <div class="entry">
-          <a href="https://ir.kaspi.kz/financial-information/annual-reports" class="ext" target="_blank" rel="noopener">Kaspi.kz Annual Reports &amp; Shareholder Letters</a>
+          <a href="https://ir.kaspi.kz/financial-information/annual-reports" class="ext" target="_blank" rel="noopener">Annual Reports &amp; Shareholder Letters</a>
           <span class="meta">CEO Mikheil Lomtadze · 2020–present</span>
         </div>
       </li>
@@ -1013,25 +980,17 @@
         <span class="tag">HBR · 2025</span>
         <div class="entry">
           <a href="https://hbr.org/2025/07/the-ceo-of-kaspi-kz-on-designing-an-essential-superapp" class="ext" target="_blank" rel="noopener">The CEO of Kaspi.kz on Designing an Essential Superapp</a>
-          <span class="meta">Mikheil Lomtadze · Harvard Business Review · July 2025 · Lomtadze on ecosystem design, customer obsession, and platform irreversibility</span>
-        </div>
-      </li>
-      <li>
-        <span class="tag">HBS Case</span>
-        <div class="entry">
-          <a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=64757" class="ext" target="_blank" rel="noopener">Kaspi.kz — HBS Case Study</a>
-          <span class="meta">Harvard Business School · Academic deep-dive on Kaspi's platform strategy and competitive dynamics in Kazakhstan</span>
+          <span class="meta">Mikheil Lomtadze · Harvard Business Review · July 2025</span>
         </div>
       </li>
     </ul>
 
-    <!-- PDD Holdings -->
     <span class="company-label">PDD Holdings</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Letter</span>
         <div class="entry">
-          <a href="https://investor.pddholdings.com/letter-to-shareholders" class="ext" target="_blank" rel="noopener">PDD Holdings Letter to Shareholders</a>
+          <a href="https://investor.pddholdings.com/letter-to-shareholders" class="ext" target="_blank" rel="noopener">Letter to Shareholders</a>
           <span class="meta">Colin Huang · Strategy and long-term philosophy in his own words</span>
         </div>
       </li>
@@ -1039,45 +998,32 @@
         <span class="tag">Huang · Pt. 1</span>
         <div class="entry">
           <a href="https://thelowdown.momentum.asia/pinduoduo-and-temu-founder-my-life-lessons-and-reflections-part-1-of-2/" class="ext" target="_blank" rel="noopener">My Life Lessons and Reflections — Part 1</a>
-          <span class="meta">Colin Huang · The Lowdown · Personal reflections on curiosity, learning, and the principles behind Pinduoduo and Temu</span>
+          <span class="meta">Colin Huang · The Lowdown</span>
         </div>
       </li>
       <li>
         <span class="tag">Huang · Pt. 2</span>
         <div class="entry">
           <a href="https://thelowdown.momentum.asia/pinduoduo-and-temu-founder-my-life-lessons-and-reflections-part-2-of-2/" class="ext" target="_blank" rel="noopener">My Life Lessons and Reflections — Part 2</a>
-          <span class="meta">Colin Huang · The Lowdown · On building organisations, long-termism, and what he wishes he'd understood earlier</span>
+          <span class="meta">Colin Huang · The Lowdown</span>
         </div>
       </li>
     </ul>
 
-    <!-- Standard Oil -->
-    <span class="company-label">Standard Oil / Rockefeller</span>
-    <ul class="resource-list">
-      <li>
-        <span class="tag">Doran</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Breaking-Rockefeller-Incredible-Ambitious-Toppled/dp/0525429069" class="ext" target="_blank" rel="noopener">Breaking Rockefeller: The Incredible Story of the Ambitious Rivals Who Toppled an Oil Empire</a>
-          <span class="meta">Peter B. Doran · 2016 · How Nobels and Rothschilds cracked Standard Oil's monopoly — a masterclass in how entrenched power is dismantled by persistent, well-positioned challengers</span>
-        </div>
-      </li>
-    </ul>
-
-    <!-- Tencent -->
     <span class="company-label">Tencent</span>
     <ul class="resource-list">
       <li>
         <span class="tag">Chen</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Influence-Empire-Story-Tencent-Ambition/dp/1804990078" class="ext" target="_blank" rel="noopener">Influence Empire: The Story of Tencent and China's Tech Ambition</a>
+          <a href="https://www.amazon.com/Influence-Empire-Story-Tencent-Ambition/dp/1804990078" class="ext" target="_blank" rel="noopener">Influence Empire</a>
           <span class="meta">Lulu Yilun Chen · 2022</span>
         </div>
       </li>
       <li>
         <span class="tag">Lee</span>
         <div class="entry">
-          <a href="https://www.amazon.com/AI-Superpowers-China-Silicon-Valley/dp/132854639X" class="ext" target="_blank" rel="noopener">AI Superpowers: China, Silicon Valley, and the New World Order</a>
-          <span class="meta">Kai-Fu Lee · 2018 · Tencent's platform strategy in the context of China's AI race</span>
+          <a href="https://www.amazon.com/AI-Superpowers-China-Silicon-Valley/dp/132854639X" class="ext" target="_blank" rel="noopener">AI Superpowers</a>
+          <span class="meta">Kai-Fu Lee · 2018</span>
         </div>
       </li>
     </ul>
@@ -1088,7 +1034,7 @@
   <!-- ─── ANTI-LIBRARY ─── -->
   <section>
     <h2>Anti-Library</h2>
-    <p style="font-size:0.88rem; color:var(--grey); font-style:italic; margin: 1.2rem 0 0; line-height:1.65;">Taleb's notion: the books you haven't read are more valuable than the ones you have. These are on the shelf or on the list — unread but waiting.</p>
+    <p style="font-size:0.88rem; color:var(--grey); font-style:italic; margin: 1.2rem 0 0; line-height:1.65;">Taleb's notion: the books you haven't read are more valuable than the ones you have. These are on the shelf — unread but waiting.</p>
     <ul class="resource-list">
 
       <li>
@@ -1108,17 +1054,9 @@
       </li>
 
       <li>
-        <span class="tag">Wright</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Imagineering-Pyramid-Disney-Theme-Creative/dp/1484771451" class="ext" target="_blank" rel="noopener">The Imagineering Pyramid</a>
-          <span class="meta">Louis J. Wright · 2020 · Disney theme park design as creative framework</span>
-        </div>
-      </li>
-
-      <li>
         <span class="tag">Hamming</span>
         <div class="entry">
-          <a href="https://www.amazon.com/Art-Doing-Science-Engineering-Learning/dp/1732265178" class="ext" target="_blank" rel="noopener">The Art of Doing Science and Engineering: Learning to Learn</a>
+          <a href="https://www.amazon.com/Art-Doing-Science-Engineering-Learning/dp/1732265178" class="ext" target="_blank" rel="noopener">The Art of Doing Science and Engineering</a>
           <span class="meta">Richard Hamming · 1997</span>
         </div>
       </li>
@@ -1135,15 +1073,7 @@
         <span class="tag">Isaacson</span>
         <div class="entry">
           <a href="https://www.amazon.com/Leonardo-Vinci-Walter-Isaacson/dp/1501139150" class="ext" target="_blank" rel="noopener">Leonardo da Vinci</a>
-          <span class="meta">Walter Isaacson · 2017 · The fullest portrait of the original polymath — curiosity as a way of life, notebooks as thinking tools, and the creative collision of art and science</span>
-        </div>
-      </li>
-
-      <li>
-        <span class="tag">Lowe</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Benjamin-Graham-Value-Investing-Financial/dp/0793107814" class="ext" target="_blank" rel="noopener">Benjamin Graham on Value Investing</a>
-          <span class="meta">Janet Lowe · 1994 · The best biographical account of Graham — the man behind the margin of safety, Security Analysis, and a generation of investors including Buffett</span>
+          <span class="meta">Walter Isaacson · 2017</span>
         </div>
       </li>
 
@@ -1151,7 +1081,7 @@
         <span class="tag">Chernow</span>
         <div class="entry">
           <a href="https://www.amazon.com/Washington-Life-Ron-Chernow/dp/0143119966" class="ext" target="_blank" rel="noopener">Washington: A Life</a>
-          <span class="meta">Ron Chernow · 2010 · Pulitzer Prize · The definitive biography — character, restraint, and how a man becomes an institution</span>
+          <span class="meta">Ron Chernow · 2010 · Pulitzer Prize</span>
         </div>
       </li>
 
@@ -1159,7 +1089,7 @@
         <span class="tag">Morris</span>
         <div class="entry">
           <a href="https://www.amazon.com/Rise-Theodore-Roosevelt-Edmund-Morris/dp/0375756787" class="ext" target="_blank" rel="noopener">The Rise of Theodore Roosevelt</a>
-          <span class="meta">Edmund Morris · 1979 · Pulitzer Prize · Vol. 1 of the definitive trilogy — Roosevelt as the archetype of relentless self-invention, physical courage, and insatiable curiosity</span>
+          <span class="meta">Edmund Morris · 1979 · Pulitzer Prize</span>
         </div>
       </li>
 
@@ -1174,7 +1104,7 @@
       <li>
         <span class="tag">Brand</span>
         <div class="entry">
-          <a href="https://www.amazon.com/How-Buildings-Learn-Happens-Theyre/dp/0140139966" class="ext" target="_blank" rel="noopener">How Buildings Learn: What Happens After They're Built</a>
+          <a href="https://www.amazon.com/How-Buildings-Learn-Happens-Theyre/dp/0140139966" class="ext" target="_blank" rel="noopener">How Buildings Learn</a>
           <span class="meta">Stewart Brand · 1994 · On adaptation, layers, and long-term thinking</span>
         </div>
       </li>
@@ -1183,23 +1113,7 @@
         <span class="tag">Meyer</span>
         <div class="entry">
           <a href="https://www.amazon.com/Setting-Table-Transforming-Hospitality-Business/dp/0060742763" class="ext" target="_blank" rel="noopener">Setting the Table</a>
-          <span class="meta">Danny Meyer · 2006 · The hospitality bible — enlightened hospitality, culture-first operations, and how to build great restaurants and teams</span>
-        </div>
-      </li>
-
-      <li>
-        <span class="tag">Schultz</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Onward-Starbucks-Fought-Without-Losing/dp/1609613821" class="ext" target="_blank" rel="noopener">Onward: How Starbucks Fought for Its Life Without Losing Its Soul</a>
-          <span class="meta">Howard Schultz · 2011 · On returning to first principles when a brand loses its way</span>
-        </div>
-      </li>
-
-      <li>
-        <span class="tag">Laukien</span>
-        <div class="entry">
-          <a href="https://www.amazon.com/Active-Biological-Evolution-Feedback-Driven-Organismal/dp/B09XQDCFHL" class="ext" target="_blank" rel="noopener">Active Biological Evolution</a>
-          <span class="meta">Frank H. Laukien · Evolution Press · 2022 · On adaptive evolution and cancer — written by the family of Bruker's CEO and founder</span>
+          <span class="meta">Danny Meyer · 2006 · The hospitality bible</span>
         </div>
       </li>
 
@@ -1215,11 +1129,17 @@
         <span class="tag">Yergin</span>
         <div class="entry">
           <a href="https://www.amazon.com/Prize-Epic-Quest-Money-Power/dp/1439110123" class="ext" target="_blank" rel="noopener">The Prize: The Epic Quest for Oil, Money and Power</a>
-          <span class="meta">Daniel Yergin · 1991 · Pulitzer Prize · The full sweep of the oil industry's political and economic history</span>
+          <span class="meta">Daniel Yergin · 1991 · Pulitzer Prize</span>
         </div>
       </li>
 
     </ul>
   </section>
+
+  <div class="footer-nav">
     <a href="/">&#8592; Home</a>
-    <span>&#169; 2026 Lee 
+    <span>&#169; 2026 Lee Kelsall</span>
+  </div>
+
+</body>
+</html>
